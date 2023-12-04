@@ -19,11 +19,21 @@ int main() {
             }
         }
     }
-    
+
     // Inicializar la última matriz en unos
     for (int m = 0; m < filas; m++) {
         for (int p = 0; p < limite; p++) {
             matriz[columnas - 1][m][p] = 1;
+        }
+    }
+    // Imprimir la matriz
+    printf("Matriz resultante:\n");
+    for (int i = 0; i < filas; i++) {
+        for (int j = 0; j < columnas; j++) {
+            for (int k = 0; k < limite; k++) {
+                printf("%d ", matriz[j][i][k]);
+            }
+            printf("\n");
         }
     }
  return 0;
