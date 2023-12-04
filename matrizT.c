@@ -19,5 +19,12 @@ int main() {
             }
         }
     }
+    
+    // Inicializar la última matriz en unos
+    for (int m = 0; m < filas; m++) {
+        for (int p = 0; p < limite; p++) {
+            matriz[columnas - 1][m][p] = 1;
+        }
+    }
  return 0;
 }
